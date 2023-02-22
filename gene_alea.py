@@ -1,3 +1,6 @@
+# This is a little program to creat a random list of number without repetition
+# you can use it with 1, 2 or 3 parameters
+
 from random import *
 import sys
 
