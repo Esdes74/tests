@@ -17,19 +17,26 @@ def generate_list(nbr, mini, maxi):
         L[r] = L[nbr - i - 1]
     return T
 
+def print_res(T):
+    res = ""
+    for i in T:
+        res += str(i)
+        res += ' '
+    print(res)
+
 T = []
     # Je n'ai qu'un argument donc c'est le nombre de nombre que je veux
 if (len(sys.argv) == 2):
     nbr = int(sys.argv[1])
     T = generate_list(nbr, 0, nbr)
-    print(T)
+    print_res(T)
 
     # J'ai deux arguments donc j'ai le nombre de nombre puis le max
 elif (len(sys.argv) == 3):
     nbr = int(sys.argv[1])
     maxi = int(sys.argv[2])
     T = generate_list(nbr, min(0, maxi), max(0, maxi))
-    print(T)
+    print_res(T)
 
     # J'ai 3 arguments donc j'ai le nombre, le min et max
 elif (len(sys.argv) == 4):
@@ -41,7 +48,7 @@ elif (len(sys.argv) == 4):
     else:
         T = generate_list(max(mini, maxi) - min(mini, maxi), min(mini, maxi),\
                 max(mini, maxi))
-    print(T)
+    print_res(T)
 
 else :
     print("pas le bon nombre d'arguments!!!")
