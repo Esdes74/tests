@@ -8,10 +8,6 @@ norminette *.c *.h libft/lib_data/* libft/lib_fct/* libft/libft.h
 echo "Compilation :"
 make
 
-echo
-echo $path
-echo
-
 echo "====================== Tests Correctes ======================"
 $1 ./so_long $path/Map_Correctes/map_correcte_tests_exit1.ber
 echo "###############################################"
