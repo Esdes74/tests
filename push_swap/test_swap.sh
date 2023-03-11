@@ -1,6 +1,6 @@
 #!/bin/sh
 
-path="../tests/push_swap"
+path="../../tests/push_swap"
 
 echo "Norminette :"
 norminette *.c *.h libft/lib_data/* libft/lib_fct/* libft/libft.h
@@ -58,166 +58,255 @@ echo "Tests checker et taille 100 arguments"
 echo
 
 ARG=$(python3 $path/gene_alea.py 100 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+echo $RES
+MOY=$RES
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 100 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+MOY=$(($MOY + $RES))
+echo $RES
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 100 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+MOY=$(($MOY + $RES))
+echo $RES
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 100 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+MOY=$(($MOY + $RES))
+echo $RES
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 100 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+MOY=$(($MOY + $RES))
+echo $RES
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 100 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+MOY=$(($MOY + $RES))
+echo $RES
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 100 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+MOY=$(($MOY + $RES))
+echo $RES
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 100 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+MOY=$(($MOY + $RES))
+echo $RES
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 100 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+MOY=$(($MOY + $RES))
+echo $RES
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 100 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+MOY=$(($MOY + $RES))
+echo $RES
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 100 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+MOY=$(($MOY + $RES))
+echo $RES
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 100 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+MOY=$(($MOY + $RES))
+echo $RES
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 100 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+MOY=$(($MOY + $RES))
+echo $RES
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 100 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+MOY=$(($MOY + $RES))
+echo $RES
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 100 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+MOY=$(($MOY + $RES))
+echo $RES
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 100 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+MOY=$(($MOY + $RES))
+echo $RES
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 100 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+MOY=$(($MOY + $RES))
+echo $RES
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 100 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+MOY=$(($MOY + $RES))
+echo $RES
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 100 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+MOY=$(($MOY + $RES))
+echo $RES
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 100 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+MOY=$(($MOY + $RES))
+echo $RES
+
+echo
+echo "moyenne des tests pour une liste de 100 nombres:"
+MOY=$(($MOY / 20))
+echo $MOY
 echo
 echo "Tests checker et taille 500 arguments"
 echo
 ARG=$(python3 $path/gene_alea.py 500 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+echo $RES
+MOY=$RES
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 500 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+echo $RES
+MOY=$(($MOY + $RES))
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 500 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+echo $RES
+MOY=$(($MOY + $RES))
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 500 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+echo $RES
+MOY=$(($MOY + $RES))
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 500 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+echo $RES
+MOY=$(($MOY + $RES))
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 500 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+echo $RES
+MOY=$(($MOY + $RES))
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 500 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+echo $RES
+MOY=$(($MOY + $RES))
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 500 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+echo $RES
+MOY=$(($MOY + $RES))
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 500 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+echo $RES
+MOY=$(($MOY + $RES))
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 500 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+echo $RES
+MOY=$(($MOY + $RES))
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 500 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+echo $RES
+MOY=$(($MOY + $RES))
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 500 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+echo $RES
+MOY=$(($MOY + $RES))
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 500 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+echo $RES
+MOY=$(($MOY + $RES))
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 500 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+echo $RES
+MOY=$(($MOY + $RES))
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 500 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+echo $RES
+MOY=$(($MOY + $RES))
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 500 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+echo $RES
+MOY=$(($MOY + $RES))
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 500 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+echo $RES
+MOY=$(($MOY + $RES))
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 500 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+echo $RES
+MOY=$(($MOY + $RES))
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 500 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+echo $RES
+MOY=$(($MOY + $RES))
 echo "###############################################"
 
 ARG=$(python3 $path/gene_alea.py 500 -200000 200000); ./push_swap $ARG | ./$path/checker_linux $ARG
-./push_swap $ARG | wc -l
+RES=$(./push_swap $ARG | wc -l)
+echo $RES
+MOY=$(($MOY + $RES))
 echo "###############################################"
 
+echo
+echo "moyenne des tests pour une liste de 500 nombres:"
+MOY=$(($MOY / 20))
+echo $MOY
 echo
 echo
 echo "====================== Tests arguments incorrects ======================"
