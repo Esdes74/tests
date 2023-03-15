@@ -1,6 +1,6 @@
 #!/bin/sh
 
-path="../../tests/push_swap"
+path="../tests/push_swap"
 
 echo "Norminette :"
 norminette *.c *.h libft/lib_data/* libft/lib_fct/* libft/libft.h
