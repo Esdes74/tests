@@ -1,1 +1,2 @@
-size = 9
+"Now?"
+"Now," said Deep Thought.

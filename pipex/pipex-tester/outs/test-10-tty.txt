@@ -1,26 +1,8 @@
-==5570== Memcheck, a memory error detector
-==5570== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==5570== Using Valgrind-3.20.0 and LibVEX; rerun with -h for copyright info
-==5570== Command: ../../../pipex/pipex not-existing/deepthought.txt grep\ Now wc\ -w outs/test-10.txt
-==5570== 
+==7001== Memcheck, a memory error detector
+==7001== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==7001== Using Valgrind-3.20.0 and LibVEX; rerun with -h for copyright info
+==7001== Command: ../../../pipex/pipex not-existing/deepthought.txt grep\ Now wc\ -w outs/test-10.txt
+==7001== 
 Error : Wrong opening infile.
 Error : Probleme with first dup programm in child
-==5578== Warning: invalid file descriptor -1 in syscall close()
-==5578== 
-==5578== HEAP SUMMARY:
-==5578==     in use at exit: 0 bytes in 0 blocks
-==5578==   total heap usage: 5 allocs, 5 frees, 51 bytes allocated
-==5578== 
-==5578== All heap blocks were freed -- no leaks are possible
-==5578== 
-==5578== For lists of detected and suppressed errors, rerun with: -s
-==5578== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-==5570== 
-==5570== HEAP SUMMARY:
-==5570==     in use at exit: 0 bytes in 0 blocks
-==5570==   total heap usage: 5 allocs, 5 frees, 43 bytes allocated
-==5570== 
-==5570== All heap blocks were freed -- no leaks are possible
-==5570== 
-==5570== For lists of detected and suppressed errors, rerun with: -s
-==5570== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==7009== Warning: invalid file descriptor -1 in syscall close()

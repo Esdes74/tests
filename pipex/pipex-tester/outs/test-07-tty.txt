@@ -1,27 +1,27 @@
-==5532== Memcheck, a memory error detector
-==5532== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==5532== Using Valgrind-3.20.0 and LibVEX; rerun with -h for copyright info
-==5532== Command: ../../../pipex/pipex assets/deepthought.txt grep\ Now wc\ -w
-==5532== 
+==6963== Memcheck, a memory error detector
+==6963== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==6963== Using Valgrind-3.20.0 and LibVEX; rerun with -h for copyright info
+==6963== Command: ../../../pipex/pipex assets/deepthought.txt grep\ Now wc\ -w
+==6963== 
 Error : You don't have enought parameters.
  Or the environnement is NULL
 Error : You don't have enought parameters.
  Or the environnement is NULL
-==5532== 
-==5532== HEAP SUMMARY:
-==5532==     in use at exit: 0 bytes in 0 blocks
-==5532==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
-==5532== 
-==5532== All heap blocks were freed -- no leaks are possible
-==5532== 
-==5532== For lists of detected and suppressed errors, rerun with: -s
-==5532== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-==5540== 
-==5540== HEAP SUMMARY:
-==5540==     in use at exit: 0 bytes in 0 blocks
-==5540==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
-==5540== 
-==5540== All heap blocks were freed -- no leaks are possible
-==5540== 
-==5540== For lists of detected and suppressed errors, rerun with: -s
-==5540== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==6963== 
+==6963== HEAP SUMMARY:
+==6963==     in use at exit: 0 bytes in 0 blocks
+==6963==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==6963== 
+==6963== All heap blocks were freed -- no leaks are possible
+==6963== 
+==6963== For lists of detected and suppressed errors, rerun with: -s
+==6963== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==6971== 
+==6971== HEAP SUMMARY:
+==6971==     in use at exit: 0 bytes in 0 blocks
+==6971==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==6971== 
+==6971== All heap blocks were freed -- no leaks are possible
+==6971== 
+==6971== For lists of detected and suppressed errors, rerun with: -s
+==6971== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
