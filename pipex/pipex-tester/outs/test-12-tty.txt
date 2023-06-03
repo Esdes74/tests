@@ -1,14 +1,15 @@
-==7031== Memcheck, a memory error detector
-==7031== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==7031== Using Valgrind-3.20.0 and LibVEX; rerun with -h for copyright info
-==7031== Command: ../../../pipex/pipex assets/deepthought.txt cat not-executable outs/test-12.txt
-==7031== 
-==7031== 
-==7031== HEAP SUMMARY:
-==7031==     in use at exit: 0 bytes in 0 blocks
-==7031==   total heap usage: 4 allocs, 4 frees, 66 bytes allocated
-==7031== 
-==7031== All heap blocks were freed -- no leaks are possible
-==7031== 
-==7031== For lists of detected and suppressed errors, rerun with: -s
-==7031== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==5946== Memcheck, a memory error detector
+==5946== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==5946== Using Valgrind-3.20.0 and LibVEX; rerun with -h for copyright info
+==5946== Command: ../../../pipex/pipex assets/deepthought.txt cat not-executable outs/test-12.txt
+==5946== 
+Parent : command not found: No such file or directory
+==5946== 
+==5946== HEAP SUMMARY:
+==5946==     in use at exit: 0 bytes in 0 blocks
+==5946==   total heap usage: 4 allocs, 4 frees, 66 bytes allocated
+==5946== 
+==5946== All heap blocks were freed -- no leaks are possible
+==5946== 
+==5946== For lists of detected and suppressed errors, rerun with: -s
+==5946== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

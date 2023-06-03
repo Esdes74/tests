@@ -1,5 +1,5 @@
-==7143== Memcheck, a memory error detector
-==7143== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==7143== Using Valgrind-3.20.0 and LibVEX; rerun with -h for copyright info
-==7143== Command: ../../../pipex/pipex assets/deepthought.txt grep\ Now wc\ -w outs/test-20.txt
-==7143== 
+==6062== Memcheck, a memory error detector
+==6062== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==6062== Using Valgrind-3.20.0 and LibVEX; rerun with -h for copyright info
+==6062== Command: ../../../pipex/pipex assets/deepthought.txt grep\ Now wc\ -w outs/test-20.txt
+==6062== 

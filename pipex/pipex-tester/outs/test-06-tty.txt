@@ -1,27 +1,16 @@
-==6950== Memcheck, a memory error detector
-==6950== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==6950== Using Valgrind-3.20.0 and LibVEX; rerun with -h for copyright info
-==6950== Command: ../../../pipex/pipex assets/deepthought.txt grep\ Now
-==6950== 
+==5867== Memcheck, a memory error detector
+==5867== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==5867== Using Valgrind-3.20.0 and LibVEX; rerun with -h for copyright info
+==5867== Command: ../../../pipex/pipex assets/deepthought.txt grep\ Now
+==5867== 
 Error : You don't have enought parameters.
  Or the environnement is NULL
-Error : You don't have enought parameters.
- Or the environnement is NULL
-==6950== 
-==6950== HEAP SUMMARY:
-==6950==     in use at exit: 0 bytes in 0 blocks
-==6950==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
-==6950== 
-==6950== All heap blocks were freed -- no leaks are possible
-==6950== 
-==6950== For lists of detected and suppressed errors, rerun with: -s
-==6950== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-==6958== 
-==6958== HEAP SUMMARY:
-==6958==     in use at exit: 0 bytes in 0 blocks
-==6958==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
-==6958== 
-==6958== All heap blocks were freed -- no leaks are possible
-==6958== 
-==6958== For lists of detected and suppressed errors, rerun with: -s
-==6958== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==5867== 
+==5867== HEAP SUMMARY:
+==5867==     in use at exit: 0 bytes in 0 blocks
+==5867==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==5867== 
+==5867== All heap blocks were freed -- no leaks are possible
+==5867== 
+==5867== For lists of detected and suppressed errors, rerun with: -s
+==5867== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
