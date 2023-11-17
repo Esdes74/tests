@@ -1,0 +1,13 @@
+WE ../tests/cube3D/textures/exit.xpm
+SO ../tests/cube3D/textures/chest.xpm
+WE ../tests/cube3D/textures/slime.xpm
+EA ../tests/cube3D/textures/wall.xpm
+
+C 125,       230, 50
+F 124,23,14
+
+1111
+1001
+1001
+1E01
+1111
