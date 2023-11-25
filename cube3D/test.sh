@@ -22,13 +22,25 @@ echo "###############################################"
 $1 ./cube3D $path_correcte/grande_map.cub
 echo "###############################################"
 $1 ./cube3D $path_correcte/grande_map2.cub
+echo "###############################################"
+$1 ./cube3D $path_correcte/grande_map3.cub
+echo "###############################################"
+$1 ./cube3D $path_correcte/grande_map4.cub
+echo "###############################################"
+$1 ./cube3D $path_correcte/grande_map5.cub
+echo "###############################################"
+$1 ./cube3D $path_correcte/grande_map6.cub
+echo "###############################################"
+$1 ./cube3D $path_correcte/grande_map7.cub
 
 echo
 echo "Tests dimensions map"
 echo
-$1 ./cube3D $path_correcte/map_démesurée.cub
-echo "###############################################"
-$1 ./cube3D $path_correcte/map_démesurée2.cub
+# $1 ./cube3D $path_correcte/map_démesurée.cub
+# echo "###############################################"
+# $1 ./cube3D $path_correcte/map_démesurée2.cub
+# echo "###############################################"
+$1 ./cube3D $path_correcte/map_démesurée_labyrinthe.cub
 echo "###############################################"
 $1 ./cube3D $path_correcte/toute_petite.cub
 
@@ -77,6 +89,8 @@ echo "###############################################"
 $1 ./cube3D $path_incorrecte/empty.cub
 echo "###############################################"
 $1 ./cube3D $path_incorrecte/wrong_component.cub
+echo "###############################################"
+$1 ./cube3D $path_incorrecte/unvalid_space.cub
 
 echo
 echo "Tests maps non fermées"
