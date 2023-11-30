@@ -32,6 +32,10 @@ echo "###############################################"
 $1 ./cube3D $path_correcte/grande_map6.cub
 echo "###############################################"
 $1 ./cube3D $path_correcte/grande_map7.cub
+echo "###############################################"
+$1 ./cube3D $path_correcte/map_nord.cub
+echo "###############################################"
+$1 ./cube3D $path_correcte/map_nord2.cub
 
 echo
 echo "Tests dimensions map"
