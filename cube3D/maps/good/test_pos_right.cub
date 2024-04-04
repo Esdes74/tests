@@ -1,0 +1,11 @@
+NO ../tests/cube3D/textures/test/north.xpm
+SO ../tests/cube3D/textures/test/south.xpm
+WE ../tests/cube3D/textures/test/west.xpm
+EA ../tests/cube3D/textures/test/east.xpm
+
+F 20,20,20
+C 200,200,200
+
+111111111111111111111
+1000000000000000000E1
+111111111111111111111
