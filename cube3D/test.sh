@@ -4,6 +4,8 @@ path="../tests/cube3D"
 path_correcte="$path/map_correcte"
 path_incorrecte="$path/map_incorrecte"
 
+new_path="../tests"
+
 echo "Norminette :"
 norminette *.c *.h libft/lib_data/* libft/lib_fct/* libft/libft.h
 
@@ -137,3 +139,104 @@ echo "###############################################"
 $1 ./cube3D $path_incorrecte/double_north_texture.cub
 echo "###############################################"
 $1 ./cube3D $path_incorrecte/double_weast_texture.cub
+
+echo
+echo "================= Tests nouvelles maps ====================="
+echo
+echo "Tests regles de generations de map non respectees"
+echo
+$1 ./cube3D $new_path/cube3D/maps/bad/color_invalid_rgb.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/color_missing_ceiling_rgb.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/color_missing_floor_rgb.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/color_missing.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/color_none.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/empty.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/file_letter_end.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/filetype_missing
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/filetype_wrong.buc
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/forbidden.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/map_first.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/map_middle.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/map_missing.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/map_only.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/map_too_small.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/player_multiple.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/player_none.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/player_on_edge.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/textures_dir.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/textures_duplicates.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/textures_forbidden.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/textures_invalid.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/textures_missing.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/textures_none.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/textures_not_xpm.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/wall_hole_east.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/wall_hole_north.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/wall_hole_south.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/wall_hole_west.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/bad/wall_none.cub
+echo "###############################################"
+
+$1 ./cube3D $new_path/cube3D/maps/good/cheese_maze.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/good/creepy.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/good/dungeon.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/good/library.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/good/matrix.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/good/sad_face.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/good/square_map.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/good/subject_map.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/good/test_map_hole.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/good/test_map.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/good/test_pos_bottom.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/good/test_pos_left.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/good/test_pos_right.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/good/test_pos_top.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/good/test_textures.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/good/test_whitespace.cub
+echo "###############################################"
+$1 ./cube3D $new_path/cube3D/maps/good/works.cub
+echo "###############################################"
