@@ -143,8 +143,10 @@ $1 ./cub3D $path_incorrecte/double_weast_texture.cub
 echo
 echo "================= Tests nouvelles maps ====================="
 echo
-echo "Tests regles de generations de map non respectees"
+echo "MAP INCORECTES"
 echo
+$1 ./cub3D $new_path/cub3D/maps/bad/cheese_maze.cub
+echo "###############################################"
 $1 ./cub3D $new_path/cub3D/maps/bad/color_invalid_rgb.cub
 echo "###############################################"
 $1 ./cub3D $new_path/cub3D/maps/bad/color_missing_ceiling_rgb.cub
@@ -163,8 +165,6 @@ $1 ./cub3D $new_path/cub3D/maps/bad/filetype_missing
 echo "###############################################"
 $1 ./cub3D $new_path/cub3D/maps/bad/filetype_wrong.buc
 echo "###############################################"
-$1 ./cub3D $new_path/cub3D/maps/bad/forbidden.cub
-echo "###############################################"
 $1 ./cub3D $new_path/cub3D/maps/bad/map_first.cub
 echo "###############################################"
 $1 ./cub3D $new_path/cub3D/maps/bad/map_middle.cub
@@ -175,17 +175,19 @@ $1 ./cub3D $new_path/cub3D/maps/bad/map_only.cub
 echo "###############################################"
 $1 ./cub3D $new_path/cub3D/maps/bad/map_too_small.cub
 echo "###############################################"
+$1 ./cub3D $new_path/cub3D/maps/bad/matrix.cub
+echo "###############################################"
 $1 ./cub3D $new_path/cub3D/maps/bad/player_multiple.cub
 echo "###############################################"
 $1 ./cub3D $new_path/cub3D/maps/bad/player_none.cub
 echo "###############################################"
 $1 ./cub3D $new_path/cub3D/maps/bad/player_on_edge.cub
 echo "###############################################"
+$1 ./cub3D $new_path/cub3D/maps/bad/sad_face.cub
+echo "###############################################"
 $1 ./cub3D $new_path/cub3D/maps/bad/textures_dir.cub
 echo "###############################################"
 $1 ./cub3D $new_path/cub3D/maps/bad/textures_duplicates.cub
-echo "###############################################"
-$1 ./cub3D $new_path/cub3D/maps/bad/textures_forbidden.cub
 echo "###############################################"
 $1 ./cub3D $new_path/cub3D/maps/bad/textures_invalid.cub
 echo "###############################################"
@@ -206,17 +208,17 @@ echo "###############################################"
 $1 ./cub3D $new_path/cub3D/maps/bad/wall_none.cub
 echo "###############################################"
 
-$1 ./cub3D $new_path/cub3D/maps/good/cheese_maze.cub
-echo "###############################################"
+echo
+echo "MAP CORRECTES"
+echo
+
 $1 ./cub3D $new_path/cub3D/maps/good/creepy.cub
 echo "###############################################"
 $1 ./cub3D $new_path/cub3D/maps/good/dungeon.cub
 echo "###############################################"
+$1 ./cub3D $new_path/cub3D/maps/good/forbidden.cub
+echo "###############################################"
 $1 ./cub3D $new_path/cub3D/maps/good/library.cub
-echo "###############################################"
-$1 ./cub3D $new_path/cub3D/maps/good/matrix.cub
-echo "###############################################"
-$1 ./cub3D $new_path/cub3D/maps/good/sad_face.cub
 echo "###############################################"
 $1 ./cub3D $new_path/cub3D/maps/good/square_map.cub
 echo "###############################################"
@@ -237,6 +239,8 @@ echo "###############################################"
 $1 ./cub3D $new_path/cub3D/maps/good/test_textures.cub
 echo "###############################################"
 $1 ./cub3D $new_path/cub3D/maps/good/test_whitespace.cub
+echo "###############################################"
+$1 ./cub3D $new_path/cub3D/maps/good/textures_forbidden.cub
 echo "###############################################"
 $1 ./cub3D $new_path/cub3D/maps/good/works.cub
 echo "###############################################"
