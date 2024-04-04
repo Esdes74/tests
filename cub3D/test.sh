@@ -1,6 +1,6 @@
 #!/bin/sh
 
-path="../tests/cube3D"
+path="../tests/cub3D"
 path_correcte="$path/map_correcte"
 path_incorrecte="$path/map_incorrecte"
 
@@ -10,233 +10,233 @@ echo "Norminette :"
 norminette *.c *.h libft/lib_data/* libft/lib_fct/* libft/libft.h
 
 echo "Compilation :"
-make
+make val_deb
 
 echo "====================== Tests Correctes ======================"
-$1 ./cube3D $path_correcte/test_color.cub
+$1 ./cub3D $path_correcte/test_color.cub
 echo "###############################################"
-$1 ./cube3D $path_correcte/test_color2.cub
+$1 ./cub3D $path_correcte/test_color2.cub
 echo "###############################################"
-$1 ./cube3D $path_correcte/test_color3.cub
+$1 ./cub3D $path_correcte/test_color3.cub
 echo "###############################################"
-$1 ./cube3D $path_correcte/test_color4.cub
+$1 ./cub3D $path_correcte/test_color4.cub
 echo "###############################################"
-$1 ./cube3D $path_correcte/grande_map.cub
+$1 ./cub3D $path_correcte/grande_map.cub
 echo "###############################################"
-$1 ./cube3D $path_correcte/grande_map2.cub
+$1 ./cub3D $path_correcte/grande_map2.cub
 echo "###############################################"
-$1 ./cube3D $path_correcte/grande_map3.cub
+$1 ./cub3D $path_correcte/grande_map3.cub
 echo "###############################################"
-$1 ./cube3D $path_correcte/grande_map4.cub
+$1 ./cub3D $path_correcte/grande_map4.cub
 echo "###############################################"
-$1 ./cube3D $path_correcte/grande_map5.cub
+$1 ./cub3D $path_correcte/grande_map5.cub
 echo "###############################################"
-$1 ./cube3D $path_correcte/grande_map6.cub
+$1 ./cub3D $path_correcte/grande_map6.cub
 echo "###############################################"
-$1 ./cube3D $path_correcte/grande_map7.cub
+$1 ./cub3D $path_correcte/grande_map7.cub
 echo "###############################################"
-$1 ./cube3D $path_correcte/map_nord.cub
+$1 ./cub3D $path_correcte/map_nord.cub
 echo "###############################################"
-$1 ./cube3D $path_correcte/map_nord2.cub
+$1 ./cub3D $path_correcte/map_nord2.cub
 
 echo
 echo "Tests dimensions map"
 echo
-# $1 ./cube3D $path_correcte/map_démesurée.cub
+# $1 ./cub3D $path_correcte/map_démesurée.cub
 # echo "###############################################"
-# $1 ./cube3D $path_correcte/map_démesurée2.cub
+# $1 ./cub3D $path_correcte/map_démesurée2.cub
 # echo "###############################################"
-$1 ./cube3D $path_correcte/map_démesurée_labyrinthe.cub
+$1 ./cub3D $path_correcte/map_démesurée_labyrinthe.cub
 echo "###############################################"
-$1 ./cube3D $path_correcte/toute_petite.cub
+$1 ./cub3D $path_correcte/toute_petite.cub
 
 echo
 echo "=============== Tests format incorrectes ===================="
 echo
 echo "Tests nombre fichier incorrecte"
 echo
-$1 ./cube3D $path_correcte/grande_map.cub $path_correcte/grande_map.cub
+$1 ./cub3D $path_correcte/grande_map.cub $path_correcte/grande_map.cub
 echo "###############################################"
-$1 ./cube3D
+$1 ./cub3D
 echo
 echo "Tests nom fichier incorrecte"
 echo
-$1 ./cube3D not_existing
+$1 ./cub3D not_existing
 echo "###############################################"
-$1 ./cube3D not_existing.cub
+$1 ./cub3D not_existing.cub
 echo "###############################################"
-$1 ./cube3D $path_correcte/nom_incorecte.cub
+$1 ./cub3D $path_correcte/nom_incorecte.cub
 echo "###############################################"
-$1 ./cube3D $path_correcte/nom_incorecte.cu
+$1 ./cub3D $path_correcte/nom_incorecte.cu
 echo "###############################################"
-$1 ./cube3D $path_correcte/nom_incorecte.cubf
+$1 ./cub3D $path_correcte/nom_incorecte.cubf
 echo "###############################################"
-$1 ./cube3D $path_correcte/nom_incorecte.pdf
+$1 ./cub3D $path_correcte/nom_incorecte.pdf
 echo "###############################################"
-$1 ./cube3D $path_incorrecte/wrong_format.pdf
+$1 ./cub3D $path_incorrecte/wrong_format.pdf
 
 echo
 echo "================= Tests map incorrectes ====================="
 echo
 echo "Tests regles de generations de map non respectees"
 echo
-$1 ./cube3D $path_incorrecte/double_perso.cub
+$1 ./cub3D $path_incorrecte/double_perso.cub
 echo "###############################################"
-$1 ./cube3D $path_incorrecte/double_perso2.cub
+$1 ./cub3D $path_incorrecte/double_perso2.cub
 echo "###############################################"
-$1 ./cube3D $path_incorrecte/double_perso3.cub
+$1 ./cub3D $path_incorrecte/double_perso3.cub
 echo "###############################################"
-$1 ./cube3D $path_incorrecte/map_démesurée_sans_perso.cub
+$1 ./cub3D $path_incorrecte/map_démesurée_sans_perso.cub
 echo "###############################################"
-$1 ./cube3D $path_incorrecte/without_perso.cub
+$1 ./cub3D $path_incorrecte/without_perso.cub
 echo "###############################################"
-$1 ./cube3D $path_incorrecte/no_map.cub
+$1 ./cub3D $path_incorrecte/no_map.cub
 echo "###############################################"
-$1 ./cube3D $path_incorrecte/empty.cub
+$1 ./cub3D $path_incorrecte/empty.cub
 echo "###############################################"
-$1 ./cube3D $path_incorrecte/wrong_component.cub
+$1 ./cub3D $path_incorrecte/wrong_component.cub
 echo "###############################################"
-$1 ./cube3D $path_incorrecte/unvalid_space.cub
+$1 ./cub3D $path_incorrecte/unvalid_space.cub
 
 echo
 echo "Tests maps non fermées"
 echo
-$1 ./cube3D $path_incorrecte/opened_map.cub
+$1 ./cub3D $path_incorrecte/opened_map.cub
 echo "###############################################"
-$1 ./cube3D $path_incorrecte/opened_map2.cub
+$1 ./cub3D $path_incorrecte/opened_map2.cub
 echo "###############################################"
-$1 ./cube3D $path_incorrecte/opened_map3.cub
+$1 ./cub3D $path_incorrecte/opened_map3.cub
 echo "###############################################"
-$1 ./cube3D $path_incorrecte/opened_map4.cub
+$1 ./cub3D $path_incorrecte/opened_map4.cub
 echo "###############################################"
-$1 ./cube3D $path_incorrecte/opened_map5.cub
+$1 ./cub3D $path_incorrecte/opened_map5.cub
 echo "###############################################"
-$1 ./cube3D $path_incorrecte/opened_map6.cub
+$1 ./cub3D $path_incorrecte/opened_map6.cub
 echo "###############################################"
-$1 ./cube3D $path_incorrecte/opened_map7.cub
+$1 ./cub3D $path_incorrecte/opened_map7.cub
 echo "###############################################"
-$1 ./cube3D $path_incorrecte/opened_map8.cub
+$1 ./cub3D $path_incorrecte/opened_map8.cub
 echo "###############################################"
-$1 ./cube3D $path_incorrecte/opened_map9.cub
+$1 ./cub3D $path_incorrecte/opened_map9.cub
 
 echo
 echo "Tests sur les textures ou les couleurs"
 echo
-$1 ./cube3D $path_incorrecte/same_texture.cub
+$1 ./cub3D $path_incorrecte/same_texture.cub
 echo "###############################################"
-$1 ./cube3D $path_incorrecte/same_texture2.cub
+$1 ./cub3D $path_incorrecte/same_texture2.cub
 echo "###############################################"
-$1 ./cube3D $path_incorrecte/test_color.cub
+$1 ./cub3D $path_incorrecte/test_color.cub
 echo "###############################################"
-$1 ./cube3D $path_incorrecte/test_color2.cub
+$1 ./cub3D $path_incorrecte/test_color2.cub
 echo "###############################################"
-$1 ./cube3D $path_incorrecte/test_color3.cub
+$1 ./cub3D $path_incorrecte/test_color3.cub
 echo "###############################################"
-$1 ./cube3D $path_incorrecte/one_color.cub
+$1 ./cub3D $path_incorrecte/one_color.cub
 echo "###############################################"
-$1 ./cube3D $path_incorrecte/one_texture.cub
+$1 ./cub3D $path_incorrecte/one_texture.cub
 echo "###############################################"
-$1 ./cube3D $path_incorrecte/double_north_texture.cub
+$1 ./cub3D $path_incorrecte/double_north_texture.cub
 echo "###############################################"
-$1 ./cube3D $path_incorrecte/double_weast_texture.cub
+$1 ./cub3D $path_incorrecte/double_weast_texture.cub
 
 echo
 echo "================= Tests nouvelles maps ====================="
 echo
 echo "Tests regles de generations de map non respectees"
 echo
-$1 ./cube3D $new_path/cube3D/maps/bad/color_invalid_rgb.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/color_invalid_rgb.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/color_missing_ceiling_rgb.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/color_missing_ceiling_rgb.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/color_missing_floor_rgb.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/color_missing_floor_rgb.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/color_missing.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/color_missing.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/color_none.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/color_none.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/empty.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/empty.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/file_letter_end.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/file_letter_end.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/filetype_missing
+$1 ./cub3D $new_path/cub3D/maps/bad/filetype_missing
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/filetype_wrong.buc
+$1 ./cub3D $new_path/cub3D/maps/bad/filetype_wrong.buc
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/forbidden.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/forbidden.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/map_first.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/map_first.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/map_middle.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/map_middle.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/map_missing.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/map_missing.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/map_only.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/map_only.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/map_too_small.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/map_too_small.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/player_multiple.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/player_multiple.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/player_none.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/player_none.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/player_on_edge.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/player_on_edge.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/textures_dir.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/textures_dir.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/textures_duplicates.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/textures_duplicates.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/textures_forbidden.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/textures_forbidden.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/textures_invalid.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/textures_invalid.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/textures_missing.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/textures_missing.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/textures_none.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/textures_none.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/textures_not_xpm.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/textures_not_xpm.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/wall_hole_east.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/wall_hole_east.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/wall_hole_north.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/wall_hole_north.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/wall_hole_south.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/wall_hole_south.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/wall_hole_west.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/wall_hole_west.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/bad/wall_none.cub
+$1 ./cub3D $new_path/cub3D/maps/bad/wall_none.cub
 echo "###############################################"
 
-$1 ./cube3D $new_path/cube3D/maps/good/cheese_maze.cub
+$1 ./cub3D $new_path/cub3D/maps/good/cheese_maze.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/good/creepy.cub
+$1 ./cub3D $new_path/cub3D/maps/good/creepy.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/good/dungeon.cub
+$1 ./cub3D $new_path/cub3D/maps/good/dungeon.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/good/library.cub
+$1 ./cub3D $new_path/cub3D/maps/good/library.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/good/matrix.cub
+$1 ./cub3D $new_path/cub3D/maps/good/matrix.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/good/sad_face.cub
+$1 ./cub3D $new_path/cub3D/maps/good/sad_face.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/good/square_map.cub
+$1 ./cub3D $new_path/cub3D/maps/good/square_map.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/good/subject_map.cub
+$1 ./cub3D $new_path/cub3D/maps/good/subject_map.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/good/test_map_hole.cub
+$1 ./cub3D $new_path/cub3D/maps/good/test_map_hole.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/good/test_map.cub
+$1 ./cub3D $new_path/cub3D/maps/good/test_map.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/good/test_pos_bottom.cub
+$1 ./cub3D $new_path/cub3D/maps/good/test_pos_bottom.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/good/test_pos_left.cub
+$1 ./cub3D $new_path/cub3D/maps/good/test_pos_left.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/good/test_pos_right.cub
+$1 ./cub3D $new_path/cub3D/maps/good/test_pos_right.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/good/test_pos_top.cub
+$1 ./cub3D $new_path/cub3D/maps/good/test_pos_top.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/good/test_textures.cub
+$1 ./cub3D $new_path/cub3D/maps/good/test_textures.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/good/test_whitespace.cub
+$1 ./cub3D $new_path/cub3D/maps/good/test_whitespace.cub
 echo "###############################################"
-$1 ./cube3D $new_path/cube3D/maps/good/works.cub
+$1 ./cub3D $new_path/cub3D/maps/good/works.cub
 echo "###############################################"
